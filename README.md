@@ -94,4 +94,16 @@ System Information
 	Version: 4.11.amazon
  ```
  
+ #### Out of memory
  
+ ```
+ grep -i "out of memory\|oom-killer\|soft lockup\|allocation\|blocked for more than 120 seconds\|segfault\|abrt-hook-ccpp" var/log/messages*
+ ```
+ 
+  #### Finding 'D' state process ( Uninteruptable sleep state )
+  
+  ```
+  less ps_auxwww | awk '$8 ~ /^D/{print}'
+  ```
+  
+
