@@ -103,7 +103,7 @@ System Information
   #### Finding 'D' state process ( Uninteruptable sleep state )
   
   ```
-  less ps_auxwww | awk '$8 ~ /^D/{print}'
+  less ps | awk '$8 ~ /^D/{print}'
   ```
   
 
